@@ -3,6 +3,8 @@ import { useUser } from "../context/user";
 import { firebase, firestore } from "../services/firebase";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 
+import style from "./Estilos.module.css"
+
 interface IMessage {
   id: string;
   text: string;
@@ -41,17 +43,15 @@ const Channel = () => {
   };
 
   if (loading) {
-    return <h1>Loading ...</h1>;
+    return <h1 className = {style.cargando}>Loading ...</h1>;
   }
-
   return (
     <section
-      style={{
-        fontFamily: "sans-serif",
-      }}
+    className = {style.todo}
+      
     >
-      <button onClick={logout}>logout</button>
-      <section>
+      <button onClick={logout}  className = {style.button}>Logout</button>
+      <section className = {style.mensajes}>
         {messages &&
           messages.reverse().map(({ photoURL, text, displayName, id }) => (
             <div key={id}>
@@ -67,13 +67,14 @@ const Channel = () => {
             </div>
           ))}
       </section>
-      <form onSubmit={sendMessage}>
+      <form onSubmit={sendMessage} className = {style.formulario}>
         <input
+        className = {style.input}
           type="text"
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button>send</button>
+        <button className = {style.button1}>Send</button>
       </form>
     </section>
   );

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("https://img1.picmix.com/output/stamp/normal/3/4/2/9/419243_33d3c.gif");
+    font-family: 'Itim', cursive;
+    font-size: 1.3rem;
+}
+
+.todo{
+    background: url("https://image.freepik.com/vector-gratis/fondo-azul-galaxia_125540-99.jpg");
+    border: solid;
+    color: white;
+    border-radius: 1rem;
+    height: 34rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.button{
+    background-image: url("https://i.pinimg.com/originals/43/77/7a/43777aabdfd50ec9184e63cb07919f62.gif");
+    color: black;
+    font-size: 1rem;
+    border: solid rgb(195, 0, 255);
+    border-radius: 1rem;
+    height: 2rem;
+    width: 5rem;
+    margin: 0.5rem;
+}
+
+.button1{
+    background-image: url("https://i.pinimg.com/originals/77/47/a7/7747a71d8ece84ed0f1658d5a921bb6d.gif");
+    color: black;
+    font-size: 1rem;
+    border: solid rgb(0, 174, 255);
+    border-radius: 1rem;
+    height: 2rem;
+    width: 5rem;
+    margin: 0.5rem;
+}
+
+.mensajes{
+    background-color: red;
+    border:solid;
+    margin-bottom: 1rem;
+    height: 25rem;
+}
+
+.formulario{
+    background-image: url("https://i.pinimg.com/originals/8c/f3/35/8cf33581559754a9c3420f990d99a142.gif");
+    border:solid;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formulario .input{
+    margin-top: 0.5rem;
+    background-color: cornsilk;
+    height: 2rem;
+    color: white;
+}
+
+.cargando{
+    color: blue;
+}
+
+.login{
+    background-image: url("https://i.pinimg.com/originals/77/47/a7/7747a71d8ece84ed0f1658d5a921bb6d.gif");
+    color: black;
+    font-size: 1rem;
+    border: solid rgb(0, 174, 255);
+    border-radius: 1rem;
+    height: 2rem;
+    width: 9rem;
+    margin: 0.5rem;
+    padding: center;
+    margin:center;
+}
